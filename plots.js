@@ -1,7 +1,7 @@
 function init() {
     var selector = d3.select("#selDataset");
   
-    d3.csv("/Data/Wine_Type.csv").then((data) => {
+    d3.csv("Data/Wine_Type.csv").then((data) => {
       var wineNames = data;
       wineNames.forEach((wine) => {
         selector
